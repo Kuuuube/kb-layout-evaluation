@@ -220,7 +220,7 @@ Results for English only sorted by no punctuation.
 
 ![results](layout_evaluation/results_en_nopunctuation.png "Grades per layout")
 
-Avgerage of all results.
+Average of all results.
 
 ![results](layout_evaluation/results_full_avg.png "Grades per layout")
 
