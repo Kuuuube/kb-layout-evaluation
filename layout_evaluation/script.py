@@ -43,7 +43,7 @@ def main():
     df_missing_letters = check_missing_letters(df_layouts, df_bigrams)
     if 'Missing letters' in df_missing_letters:
         print('Some letters are missing from some layouts, skewing the results:')
-        print(df_missing_letters)
+        print(df_missing_letters.to_string())
     
     # generate a dataframe of the weights per bigram per layout
     df_bigram_weight = bigram_weight(df_layouts, df_keys, df_bigrams, df_penalties)
@@ -62,37 +62,64 @@ def main():
     # save results_full.png
     df_plot = df_results.sort_values(by=['en'], ascending=True)
     df_plot = df_plot[['en', 'en_perso', 'fr', 'fr_perso', 'es', 'de', 'se']]
-    df_plot.plot(kind='bar', title='Grades per layout (lower is better) - Full results', figsize=(18,12), rot=60, width=0.8)
+    df_plot.plot(kind='bar', title='Grades per layout (lower is better) - Full results', figsize=(18,12), rot=90, width=0.8)
     plt.tight_layout()
     plt.savefig('results_full.png', dpi=300)
 
     # save results.png
     df_plot = df_results.sort_values(by=['en'], ascending=True)
     df_plot = df_plot[['en', 'fr', 'es', 'de', 'se']]
-    df_plot.plot(kind='bar', title='Grades per layout (lower is better)', figsize=(18,12), rot=60, width=0.8)
+    df_plot.plot(kind='bar', title='Grades per layout (lower is better)', figsize=(18,12), rot=90, width=0.8)
     plt.tight_layout()
     plt.savefig('results.png', dpi=300)
 
     # save results_en.png
     df_plot = df_results.sort_values(by=['en'], ascending=True)
     df_plot = df_plot[['en', 'en_nopunctuation', 'en_perso']]
-    df_plot.plot(kind='bar', title='Grades per layout (lower is better) - Results for English', figsize=(18,12), rot=60, width=0.8)
+    df_plot.plot(kind='bar', title='Grades per layout (lower is better) - Results for English', figsize=(18,12), rot=90, width=0.8)
     plt.tight_layout()
     plt.savefig('results_en.png', dpi=300)
 
     # save results_fr.png
     df_plot = df_results.sort_values(by=['fr'], ascending=True)
     df_plot = df_plot[['fr', 'fr_nopunctuation', 'fr_perso']]
-    df_plot.plot(kind='bar', title='Grades per layout (lower is better) - Results for French', figsize=(18,12), rot=60, width=0.8)
+    df_plot.plot(kind='bar', title='Grades per layout (lower is better) - Results for French', figsize=(18,12), rot=90, width=0.8)
     plt.tight_layout()
     plt.savefig('results_fr.png', dpi=300)
+
+    #save to results_en_avg
+    columns_list = ['en', 'en_perso', 'en_nopunctuation']
+    df_results['en_avg'] = df_results[columns_list].mean(axis=1)
+    df_plot = df_results.sort_values(by=['en_avg'], ascending=True)
+    df_plot = df_plot[['en_avg']]
+    df_plot.plot(kind='bar', title='Grades per layout (lower is better) - Results for English Average', figsize=(18,12), rot=90, width=0.8)
+    plt.tight_layout()
+    plt.savefig('results_en_avg.png', dpi=300)
+
+    # save results_en_nopunctuation.png
+    df_plot = df_results.sort_values(by=['en_nopunctuation'], ascending=True)
+    df_plot = df_plot[['en', 'en_nopunctuation', 'en_perso']]
+    df_plot.plot(kind='bar', title='Grades per layout (lower is better) - Results for English No Punctuation', figsize=(18,12), rot=90, width=0.8)
+    plt.tight_layout()
+    plt.savefig('results_en_nopunctuation.png', dpi=300)
+
+    #save to results_full_avg
+    columns_list1 = ['fr', 'fr_perso']
+    df_results['fr_avg'] = df_results[columns_list1].mean(axis=1)
+    columns_list = ['en_avg', 'fr_avg', 'es', 'de', 'se']
+    df_results['full_avg'] = df_results[columns_list].mean(axis=1)
+    df_plot = df_results.sort_values(by=['full_avg'], ascending=True)
+    df_plot = df_plot[['full_avg']]
+    df_plot.plot(kind='bar', title='Grades per layout (lower is better) - Results for Full Average', figsize=(18,12), rot=90, width=0.8)
+    plt.tight_layout()
+    plt.savefig('results_full_avg.png', dpi=300)
 
     # print the table
     df_plot = df_results.sort_values(by=['en'], ascending=True)
     # df_plot = df_plot[['en', 'en_nopunctuation', 'en_perso', 'fr', 'fr_nopunctuation', 'fr_perso', 'es', 'de', 'Personal average']]
-    df_plot = df_plot[['en', 'en_perso', 'fr', 'fr_perso', 'es', 'de', 'se']]
+    df_plot = df_plot[['en', 'en_perso', 'en_nopunctuation', 'en_avg', 'fr', 'fr_perso', 'es', 'de', 'se', 'full_avg']]
     with open ("df_plot.txt", "w") as df_plot_file:
-        df_plot_file.write(str(df_plot))
+        df_plot_file.write(df_plot.to_string())
 
 
 def load_config():

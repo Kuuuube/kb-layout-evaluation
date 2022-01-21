@@ -212,55 +212,84 @@ Here are the full results, for all languages and including my personal corpus fo
 
 ![results](layout_evaluation/results_full.png "Grades per layout")
 
-In addition, here are the results for [only English](layout_evaluation/results_en.png) and [only French](layout_evaluation/results_fr.png). For comparison this includes the results before adding the punctuation as described [earlier](#punctuation). The necessity of taking into account the punctuation is clear. Both the "theory" and personal corpus give very similar grades, so results are quite consistent.
+Results for English only.
+
+![results](layout_evaluation/results_en.png "Grades per layout")
+
+Results for English only and no punctuation.
+
+![results](layout_evaluation/results_en_nopunctuation.png "Grades per layout")
+
+Avgerage of all results.
+
+![results](layout_evaluation/results_full_avg.png "Grades per layout")
 
 Here is the complete results list. The layouts can be seen in `config.txt`.
 
-| Layout                                                                                                                                        | English | English perso | French | French perso | Spanish | German | Swedish |
-| :-------------------------------------------------------------------------------------------------------------------------------------------- | ------: | ------------: | -----: | -----------: | ------: | -----: | ------: |
-| [MTGAP](https://mathematicalmulticore.wordpress.com/the-keyboard-layout-project/)                                                             |   64.48 |         63.17 |  69.73 |        69.20 |   66.14 |  67.15 |   67.38 |
-| [BEAKL 19bis](https://www.reddit.com/r/ErgoDoxEZ/comments/gsvpug/layout_of_the_month_beakl_15/ftcan68/?context=3)                             |   64.51 |         63.47 |  66.87 |        65.81 |   64.45 |  67.92 |   69.00 |
-| Colemak DHm mod                                                                                                                               |   64.54 |         64.18 |  67.32 |        66.75 |   64.18 |  64.70 |   68.16 |
-| [Engram 2.0](https://engram.dev/)                                                                                                             |   64.59 |         63.32 |  71.17 |        70.28 |   66.52 |  69.11 |   69.47 |
-| [Colemak DHm](https://colemakmods.github.io/mod-dh/keyboards.html)                                                                            |   64.66 |         64.31 |  67.88 |        67.21 |   64.18 |  64.70 |   68.16 |
-| [The-1](https://docs.google.com/document/d/1yiCnIi1oagV1D8ZouMt-TRFRG8d6AfSBIwQkBvSflvY/edit)                                                 |   64.80 |         63.20 |  72.64 |        71.75 |   68.97 |  67.54 |   70.26 |
-| [MTGAP 2.0](https://mathematicalmulticore.wordpress.com/2010/06/21/mtgaps-keyboard-layout-2-0/)                                               |   64.91 |         64.44 |  67.21 |        65.77 |   64.01 |  64.98 |   66.77 |
-| [MTGAP "ergonomic"](http://mtgap.bilfo.com/official_keyboard.html)                                                                            |   64.99 |         64.96 |  69.18 |        68.63 |   64.81 |  66.23 |   66.72 |
-| [White](https://github.com/mw8/white_keyboard_layout)                                                                                         |   65.10 |         64.00 |  73.60 |        73.76 |   68.09 |  66.50 |   69.55 |
-| [Kaehi](https://geekhack.org/index.php?topic=98275.0)                                                                                         |   65.56 |         64.18 |  70.35 |        69.09 |   65.92 |  67.83 |   67.94 |
-| [x1](https://keyboard-design.com/letterlayout.html?layout=x1.en.ergodox)                                                                      |   65.63 |         64.87 |  69.76 |        69.23 |   66.28 |  68.03 |   67.91 |
-| [Colemak DH](https://colemakmods.github.io/mod-dh/)                                                                                           |   65.71 |         65.29 |  69.32 |        68.64 |   65.67 |  65.43 |   68.46 |
-| [Workman](https://workmanlayout.org/)                                                                                                         |   65.83 |         65.51 |  71.42 |        70.57 |   66.85 |  66.93 |   71.31 |
-| [MTGAP "standard"](http://mtgap.bilfo.com/official_keyboard.html)                                                                             |   65.84 |         65.24 |  68.35 |        67.27 |   64.43 |  66.78 |   66.74 |
-| [Soul mod](http://kennetchaz.github.io/symmetric-typing/soul.html)                                                                            |   65.89 |         65.53 |  68.96 |        68.00 |   64.71 |  64.38 |   68.37 |
-| [BEAKL 19](https://web.archive.org/web/20190906220509/http://shenafu.com/smf/index.php?topic=89.msg2566#msg2566)                              |   65.98 |         65.00 |  70.36 |        68.28 |   66.12 |  66.99 |   68.85 |
-| [MTGAP "shortcuts"](http://mtgap.bilfo.com/official_keyboard.html) (ROTS)                                                                     |   66.02 |         65.59 |  68.24 |        67.30 |   62.72 |  65.44 |   66.34 |
-| [BEAKL 19 Opt French](https://www.reddit.com/r/ErgoMechKeyboards/comments/j1eopm/hands_down_layout_is_ready_for_daily_use/g7bjmr7/?context=3) |   66.32 |         65.23 |  67.12 |        65.96 |   65.85 |  65.31 |   69.32 |
-| [Uciea](https://keyboard-design.com/letterlayout.html?layout=uciea-keyboard.en.ansi)                                                          |   66.43 |         66.14 |  69.36 |        68.61 |   65.01 |  65.99 |   68.32 |
-| [Oneproduct](https://geekhack.org/index.php?topic=67604.0)                                                                                    |   66.44 |         66.07 |  73.48 |        72.44 |   68.07 |  68.45 |   69.22 |
-| [Hands down](https://sites.google.com/alanreiser.com/handsdown)                                                                               |   66.64 |         66.20 |  68.97 |        67.21 |   66.10 |  63.14 |   66.66 |
-| [MTGAP "Easy"](http://mtgap.bilfo.com/official_keyboard.html)                                                                                 |   66.78 |         66.44 |  68.63 |        67.15 |   64.55 |  64.97 |   65.35 |
-| [Colemak](https://colemak.com/)                                                                                                               |   67.15 |         67.08 |  68.40 |        67.00 |   65.37 |  67.77 |   68.82 |
-| [Niro mod](http://kennetchaz.github.io/symmetric-typing/niro.html)                                                                            |   67.41 |         67.39 |  70.47 |        69.30 |   66.58 |  67.71 |   70.41 |
-| [BEAKL 15](https://deskthority.net/wiki/BEAKL)                                                                                                |   67.43 |         66.98 |  71.86 |        69.85 |   66.64 |  69.37 |   68.59 |
-| [Halmak](https://github.com/MadRabbit/halmak)                                                                                                 |   67.94 |         67.45 |  71.84 |        70.78 |   66.87 |  69.60 |   70.68 |
-| [Three](https://github.com/jackrosenthal/threelayout)                                                                                         |   68.23 |         67.51 |  73.43 |        72.53 |   69.46 |  71.00 |   70.95 |
-| [Norman](https://normanlayout.info/)                                                                                                          |   68.34 |         67.74 |  74.01 |        72.48 |   71.24 |  69.86 |   72.10 |
-| [ASSET](http://millikeys.sourceforge.net/asset/)                                                                                              |   68.88 |         68.29 |  69.42 |        67.53 |   66.69 |  70.35 |   71.03 |
-| [Notarize](https://sites.google.com/alanreiser.com/handsdown)                                                                                 |   69.45 |         68.83 |  70.76 |        68.81 |   67.68 |  69.21 |   67.94 |
-| [Optimal digram](https://keyboard-design.com/letterlayout.html?layout=optimal-digram.en.ansi)                                                 |   70.64 |         70.21 |  72.36 |        71.53 |   68.94 |  70.21 |   70.11 |
-| [qgmlwyfub](http://mkweb.bcgsc.ca/carpalx/?full_optimization)                                                                                 |   70.83 |         70.39 |  75.87 |        76.11 |   70.24 |  72.16 |   73.71 |
-| [Carpalx](http://mkweb.bcgsc.ca/carpalx/?full_optimization)                                                                                   |   71.02 |         70.70 |  76.25 |        76.62 |   70.86 |  74.00 |   74.53 |
-| [Qwpr](https://sourceforge.net/projects/qwpr/)                                                                                                |   71.69 |         71.30 |  73.36 |        72.93 |   69.44 |  73.07 |   71.69 |
-| [Coeur](https://bepo.fr/wiki/Utilisateur:Bibidibop)                                                                                           |   72.29 |         72.46 |  67.35 |        65.66 |   67.07 |  71.04 |   73.48 |
-| [Bépo keyberon](https://github.com/TeXitoi/keyberon#whats-the-layout)                                                                         |   72.79 |         72.71 |  68.15 |        66.78 |   68.53 |  72.07 |   73.49 |
-| [Minimak-8key](http://www.minimak.org/)                                                                                                       |   72.94 |         72.37 |  74.81 |        73.48 |   71.94 |  75.20 |   73.55 |
-| [Bépo 40%](http://forum.bepo.fr/viewtopic.php?id=1131)                                                                                        |   73.20 |         73.19 |  67.97 |        66.61 |   68.54 |  73.10 |   73.56 |
-| [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout)                                                                                |   73.74 |         72.79 |  78.15 |        76.07 |   75.34 |  74.59 |   78.53 |
-| [Neo](https://neo-layout.org/)                                                                                                                |   76.31 |         75.50 |  76.37 |        75.37 |   74.56 |  71.62 |   74.16 |
-| Qwertz                                                                                                                                        |   98.56 |         97.63 |  98.12 |        97.59 |   93.66 |  98.31 |   95.30 |
-| Qwerty                                                                                                                                        |  100.00 |         99.17 |  98.90 |        98.64 |   92.45 |  99.74 |   96.08 |
-| Azerty                                                                                                                                        |  105.44 |        104.64 | 104.18 |       103.88 |  102.40 | 102.81 |  102.72 |
+| Layout | English | English perso | English No Punctuation | English Avg | French | French perso | Spanish | German | Swedish | Full Avg |
+| :-------------------------------------------------------------------------------------------------------------------------------------------- | ------: | ------------: | -----: | -----------: | ------: | -----: | ------: | ------: | ------: | ------: |
+| MTGAP | 64.48 | 63.16 | 63.63 | 63.756667 | 66.72 | 66.82 | 66.14 | 67.15 | 67.38 | 66.239333 |
+| BEAKL 19bis | 64.51 | 63.46 | 63.81 | 63.926667 | 65.42 | 64.62 | 64.45 | 67.92 | 69.00 | 66.063333 |
+| Engram 2.0/Engram Mod | 64.58 | 63.31 | 63.61 | 63.833333 | 67.95 | 67.72 | 66.52 | 69.11 | 69.47 | 67.353667 |
+| Colemak DHm | 64.66 | 64.30 | 63.44 | 64.133333 | 64.82 | 64.81 | 64.18 | 64.70 | 68.16 | 65.197667 |
+| Capewell | 64.77 | 64.58 | 64.62 | 64.656667 | 62.99 | 62.08 | 65.85 | 66.88 | 67.77 | 65.538333 |
+| The-1 | 64.80 | 63.19 | 63.32 | 63.770000 | 69.74 | 69.45 | 68.97 | 67.54 | 70.26 | 68.027000 |
+| Hieamtsrn | 64.90 | 64.09 | 64.31 | 64.433333 | 67.07 | 66.37 | 65.86 | 67.24 | 68.30 | 66.510667 |
+| MTGAP 2.0 | 64.91 | 64.43 | 63.29 | 64.210000 | 64.13 | 63.27 | 64.01 | 64.98 | 66.77 | 64.734000 |
+| Arensito | 64.92 | 64.45 | 64.65 | 64.673333 | 64.34 | 63.51 | 66.05 | 65.64 | 68.90 | 65.837667 |
+| MTGAP "ergonomic" | 64.99 | 64.95 | 63.66 | 64.533333 | 66.20 | 66.25 | 64.81 | 66.23 | 66.72 | 65.703667 |
+| White | 65.10 | 63.99 | 64.18 | 64.423333 | 70.50 | 71.32 | 68.09 | 66.50 | 69.55 | 67.894667 |
+| full-maks-minimo | 65.37 | 64.62 | 64.61 | 64.866667 | 67.15 | 66.82 | 68.27 | 67.80 | 67.29 | 67.042333 |
+| Kaehi | 65.56 | 64.18 | 64.33 | 64.690000 | 66.59 | 66.14 | 65.92 | 67.83 | 67.94 | 66.549000 |
+| x1 | 65.63 | 64.86 | 64.79 | 65.093333 | 66.86 | 66.89 | 66.28 | 68.03 | 67.91 | 66.837667 |
+| Colemak DHk | 65.71 | 65.28 | 64.51 | 65.166667 | 66.29 | 66.26 | 65.67 | 65.43 | 68.46 | 66.200333 |
+| Workman | 65.83 | 65.50 | 64.65 | 65.326667 | 68.30 | 68.11 | 66.85 | 66.93 | 71.31 | 67.724333 |
+| MTGAP "standard" | 65.84 | 65.24 | 64.52 | 65.200000 | 65.41 | 64.89 | 64.43 | 66.78 | 66.74 | 65.660000 |
+| Soul mod | 65.89 | 65.52 | 64.67 | 65.360000 | 66.25 | 65.83 | 64.71 | 64.38 | 68.37 | 65.772000 |
+| BEAKL 19 | 65.98 | 64.99 | 64.75 | 65.240000 | 66.47 | 65.20 | 66.12 | 66.99 | 68.85 | 66.607000 |
+| MTGAP "shortcuts" | 66.02 | 65.58 | 64.74 | 65.446667 | 64.73 | 64.45 | 62.72 | 65.44 | 66.34 | 64.907333 |
+| uciea-gcsv | 66.22 | 65.99 | 66.72 | 66.310000 | 65.30 | 64.68 | 66.55 | 68.09 | 71.39 | 67.466000 |
+| BEAKL 19 Opt French | 66.32 | 65.23 | 65.32 | 65.623333 | 66.08 | 64.99 | 65.85 | 65.31 | 69.32 | 66.327667 |
+| Uciea | 66.43 | 66.13 | 65.77 | 66.110000 | 66.10 | 66.01 | 65.01 | 65.99 | 68.32 | 66.297000 |
+| Oneproduct | 66.44 | 66.06 | 65.38 | 65.960000 | 69.56 | 69.36 | 68.07 | 68.45 | 69.22 | 68.232000 |
+| Hands down | 66.64 | 66.19 | 65.51 | 66.113333 | 65.55 | 64.51 | 66.10 | 63.14 | 66.66 | 65.408667 |
+| MTGAP "Easy" | 66.78 | 66.43 | 65.71 | 66.306667 | 65.62 | 64.76 | 64.55 | 64.97 | 65.35 | 65.273333 |
+| Colemak Angle Mod ANSI | 66.82 | 66.96 | 65.64 | 66.473333 | 65.50 | 64.86 | 65.25 | 66.66 | 68.10 | 66.332667 |
+| Colemak Angle Mod ISO | 66.88 | 67.01 | 65.70 | 66.530000 | 65.56 | 64.94 | 65.60 | 67.01 | 68.14 | 66.506000 |
+| Colemak | 67.15 | 67.07 | 65.97 | 66.730000 | 65.35 | 64.58 | 65.37 | 67.77 | 68.82 | 66.731000 |
+| uciea-pcrw | 67.23 | 67.14 | 66.60 | 66.990000 | 66.45 | 66.19 | 66.07 | 66.62 | 68.80 | 66.960000 |
+| Niro mod | 67.41 | 67.38 | 66.36 | 67.050000 | 67.53 | 67.00 | 66.58 | 67.71 | 70.41 | 67.803000 |
+| BEAKL 15 | 67.43 | 66.97 | 66.48 | 66.960000 | 67.86 | 66.60 | 66.64 | 69.37 | 68.59 | 67.758000 |
+| Halmak | 67.94 | 67.44 | 66.76 | 67.380000 | 68.33 | 68.00 | 66.87 | 69.60 | 70.68 | 68.539000 |
+| Three | 68.23 | 67.51 | 67.02 | 67.586667 | 70.62 | 70.32 | 69.46 | 71.00 | 70.95 | 69.893333 |
+| Norman | 68.34 | 67.73 | 67.33 | 67.800000 | 71.30 | 70.33 | 71.24 | 69.86 | 72.10 | 70.363000 |
+| ASSET | 68.88 | 68.28 | 67.85 | 68.336667 | 66.44 | 65.17 | 66.69 | 70.35 | 71.03 | 68.442333 |
+| Notarize | 69.45 | 68.83 | 68.49 | 68.923333 | 67.88 | 66.52 | 67.68 | 69.21 | 67.94 | 68.190667 |
+| Capewell-Dvorak | 70.11 | 69.17 | 69.30 | 69.526667 | 74.56 | 74.00 | 74.35 | 70.91 | 75.99 | 73.011333 |
+| Optimal digram | 70.64 | 70.21 | 69.64 | 70.163333 | 69.24 | 69.09 | 68.94 | 70.21 | 70.11 | 69.717667 |
+| qgmlwyfub | 70.83 | 70.39 | 69.86 | 70.360000 | 72.25 | 73.29 | 70.24 | 72.16 | 73.71 | 71.848000 |
+| g-ansi-maks | 70.94 | 70.71 | 70.59 | 70.746667 | 70.99 | 71.03 | 72.39 | 68.91 | 72.73 | 71.157333 |
+| qgmlwbyuv | 71.02 | 70.70 | 70.10 | 70.606667 | 72.63 | 73.81 | 70.86 | 74.00 | 74.53 | 72.643333 |
+| c-qwerty n | 71.26 | 71.09 | 71.04 | 71.130000 | 68.75 | 67.41 | 70.08 | 72.83 | 75.28 | 71.480000 |
+| Klausler | 71.37 | 70.46 | 70.47 | 70.766667 | 73.58 | 72.60 | 74.08 | 73.15 | 73.95 | 73.007333 |
+| Qwpr | 71.69 | 71.30 | 70.78 | 71.256667 | 70.50 | 70.68 | 69.44 | 73.07 | 71.69 | 71.209333 |
+| Coeur | 72.29 | 72.46 | 71.67 | 72.140000 | 65.11 | 63.93 | 67.07 | 71.04 | 73.48 | 69.650000 |
+| B#po keyberon | 72.79 | 72.71 | 71.81 | 72.436667 | 67.10 | 65.86 | 68.53 | 72.07 | 73.49 | 70.601333 |
+| qgmlwbyuob | 72.93 | 71.84 | 71.97 | 72.246667 | 76.71 | 77.65 | 75.46 | 72.23 | 73.83 | 74.189333 |
+| Minimak-8key | 72.94 | 72.36 | 71.89 | 72.396667 | 71.90 | 71.19 | 71.94 | 75.20 | 73.55 | 72.926333 |
+| B#po 40% | 73.20 | 73.19 | 72.36 | 72.916667 | 66.92 | 65.69 | 68.54 | 73.10 | 73.56 | 70.884333 |
+| Dvorak | 73.74 | 72.78 | 72.96 | 73.160000 | 75.38 | 73.82 | 75.34 | 74.59 | 78.53 | 75.244000 |
+| abKey | 75.13 | 75.36 | 77.62 | 76.036667 | 71.78 | 72.08 | 74.59 | 78.56 | 78.61 | 75.945333 |
+| Neo | 76.31 | 75.50 | 75.22 | 75.676667 | 73.86 | 73.34 | 74.56 | 71.62 | 74.16 | 73.923333 |
+| Qwkrfy | 78.58 | 77.69 | 77.71 | 77.993333 | 75.99 | 76.68 | 73.60 | 82.41 | 77.83 | 77.633667 |
+| c-qwerty | 78.78 | 78.04 | 78.88 | 78.566667 | 76.26 | 74.74 | 78.01 | 84.63 | 84.48 | 80.237333 |
+| c-qwerty 0.5 | 86.95 | 86.08 | 87.03 | 86.686667 | 84.51 | 82.25 | 83.82 | 89.65 | 90.83 | 86.873333 |
+| Qwertz | 98.56 | 97.63 | 98.43 | 98.206667 | 96.11 | 95.99 | 93.66 | 98.31 | 95.30 | 96.305333 |
+| Qwerty Angle Mod | 99.68 | 98.94 | 99.38 | 99.333333 | 96.77 | 96.82 | 92.54 | 99.98 | 95.51 | 96.831667 |
+| Qwerty | 100.00 | 99.17 | 99.70 | 99.623333 | 96.94 | 97.10 | 92.45 | 99.74 | 96.08 | 96.982667 |
+| Azerty | 105.44 | 104.63 | 105.46 | 105.176667 | 101.13 | 101.56 | 102.40 | 102.81 | 102.72 | 102.890333 |
+| ABCDE | 107.36 | 107.68 | 107.21 | 107.416667 | 106.48 | 106.85 | 107.04 | 103.36 | 104.72 | 105.840333 |
+| TNWMLC | 128.82 | 130.06 | 129.27 | 129.383333 | 125.40 | 125.68 | 125.31 | 121.88 | 125.59 | 125.540667 |
 
 As the "Colemak DHm" layout gave the most interesting results, a personal modified version was added to replace some characters like `;` (that can be on a layer like Shift + `,`) by the French `é`.
 
