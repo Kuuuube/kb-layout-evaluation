@@ -13,7 +13,7 @@ def main():
     df_layouts, df_keys, df_bigrams, df_penalties = parse_config(load_config())
 
     # as some letters are not present in all layouts, they can be manually removed from the bigrams list
-    letters_to_ignore = 'êàçâîôñäöüß/å'
+    letters_to_ignore = 'êàçâîôñäöüß/åéè'
     # iterate over the dataframe to remove the letters
     for row in df_bigrams.itertuples():
         drop = False
@@ -50,8 +50,9 @@ def main():
     
     # get the results
     df_results = layout_results(df_bigrams, df_bigram_weight)
+    
     # normalize the results based of Qwerty English = 100%
-    df_results = df_results.applymap(lambda x: round(x/df_results.at['Qwerty', 'en'] * 100, 2))
+    df_results = df_results.applymap(lambda x: round(x/df_results.at['Qwerty\r', 'en'] * 100, 2))
 
     # add average column with arbitrary coefs per language
     df_results['Personal average'] = df_results.en * 0.5 + df_results.fr * 0.3 + df_results.es * 0.1 + df_results.de * 0.1
@@ -90,7 +91,8 @@ def main():
     df_plot = df_results.sort_values(by=['en'], ascending=True)
     # df_plot = df_plot[['en', 'en_nopunctuation', 'en_perso', 'fr', 'fr_nopunctuation', 'fr_perso', 'es', 'de', 'Personal average']]
     df_plot = df_plot[['en', 'en_perso', 'fr', 'fr_perso', 'es', 'de', 'se']]
-    print(df_plot)
+    with open ("df_plot.txt", "w") as df_plot_file:
+        df_plot_file.write(str(df_plot))
 
 
 def load_config():
