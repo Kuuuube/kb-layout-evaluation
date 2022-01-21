@@ -291,8 +291,6 @@ Here is the complete results list. The layouts can be seen in `config.txt`.
 | ABCDE | 107.36 | 107.68 | 107.21 | 107.416667 | 106.48 | 106.85 | 107.04 | 103.36 | 104.72 | 105.840333 |
 | TNWMLC | 128.82 | 130.06 | 129.27 | 129.383333 | 125.40 | 125.68 | 125.31 | 121.88 | 125.59 | 125.540667 |
 
-As the "Colemak DHm" layout gave the most interesting results, a personal modified version was added to replace some characters like `;` (that can be on a layer like Shift + `,`) by the French `é`.
-
 # Conclusion
 
 All the alternative layouts perform very significantly better than the traditional ones (Qwerty and similar). The biggest interest for ergonomics is using an alternative layout at all, the selected choice matters a lot less.
