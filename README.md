@@ -216,7 +216,7 @@ Results for English only.
 
 ![results](layout_evaluation/results_en.png "Grades per layout")
 
-Results for English only and no punctuation.
+Results for English only sorted by no punctuation.
 
 ![results](layout_evaluation/results_en_nopunctuation.png "Grades per layout")
 
