@@ -362,6 +362,11 @@ x a u e i , c t s r n h
 # a r e s f k t n i o - 
 # x c z v j b p l u q #
 
+>>Capewell Mod
+# . m y d g : w h < " ?
+# a r e s f k t n i o - 
+# z x c v j b p l u q #
+
 //https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
 >>abKey
 # f g h j k l m n # # #
