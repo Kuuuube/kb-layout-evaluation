@@ -177,6 +177,18 @@ z x c v b \ k m , . / -
 # i n e a , m h t s r '
 # q z / . : b f g v x -
 
+// https://www.youtube.com/watch?v=jXkeUr1DF-k
+>>MTGAP Mod1
+# y p o u z k d l c w x
+# i n e a , m h t s r -
+# " / ' . q b f g v j #
+
+// https://www.youtube.com/watch?v=-UkoTEGiBpQ
+>>MTGAP Mod2
+# y p o u j k d l c w #
+# i n e a , m h t s r #
+# q z ' . ; b f g v x -
+
 // http://mtgap.bilfo.com/official_keyboard.html
 // http://mtgap.bilfo.com/completed_keyboard.html
 >>MTGAP 2.0
@@ -358,44 +370,44 @@ x a u e i , c t s r n h
 
 //https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
 >>Capewell
-# . m y d g : w h < " ?
+# . m y d g : w h , ' ?
 # a r e s f k t n i o - 
 # x c z v j b p l u q #
 
 >>Capewell Mod
-# . m y d g : w h < " ?
+# . m y d g : w h , ' ?
 # a r e s f k t n i o - 
 # z x c v j b p l u q #
 
 //https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
 >>abKey
-# f g h j k l m n # # #
-# a e i o u p q r s t ;
-# b c d v w x y z # # #
+# f g h j k l m n - # #
+# a e i o u p q r s t ; '
+# b c d v w x y z , . #
 
 //https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
 >>c-qwerty n
 # q w d r f j y p l ; [
 # a s e t g h u n i o '
-# z x c v b k m , . / #
+# z x c v b k m , . / -
 
 //https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
 >>c-qwerty
 # q w d r f j y p l k [
 # a s e t g h u i o , ' 
-# z x c v b n m ; . / #
+# z x c v b n m ; . / -
 
 //https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
 >>c-qwerty 0.5
 # q w d r t j y k l p [
 # a s e f g h u i o ; ' 
-# z x c v b n m , . / #
+# z x c v b n m , . / -
 
 //https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
 >>Arensito
 # q l , p ' ; f u d k [
 # a r e n b g s i t o ' 
-# z w . h j v c y m x #
+# z w . h j v c y m x -
 
 //https://keyboard-design.com/best-ansi-layouts-all.html
 >>g-ansi-maks
@@ -413,10 +425,10 @@ x a u e i , c t s r n h
 >>uciea-gcsv
 # g y u o - k m h p x q
 # c i e a , d t r n s v
-# z j ; , ; f w l b / #
+# z j ' . ; f w l b / #
 
 //https://keyboard-design.com/best-ansi-layouts-all.html
 >>full-maks-minimo
 # q y u o ' # c l p v x
-# i h e a , d s t n r w z
+- i h e a , d s t n r w z
 # j k # . ; f g m b # #
