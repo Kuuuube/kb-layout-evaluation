@@ -91,13 +91,13 @@ z x c v b \ n m , . / -
 # a s d f g h j k l ö ä
 # y x c v b n m , . - '
 
->>B#po 40%
+>>Bepo 40%
 # b # p o # ^ v d l j z
 - a u i e , c t s r n m
 ç à y x . k ' q g h f w
 
 // https://github.com/TeXitoi/keyberon#whats-the-layout
->>B#po keyberon
+>>Bepo keyberon
 # b # p o # ^ v d l j z
 w a u i e , c t s r n m
 - à y x . k ' q g h f ç
