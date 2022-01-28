@@ -208,7 +208,7 @@ The code isn't very efficient as it iterates through dataframes to generate the 
 
 ## Results
 
-Here are the full results, for all languages and including my personal corpus for English and French.
+Here are the full results.
 
 ![results](layout_evaluation/results_full.png "Grades per layout")
 
@@ -219,6 +219,10 @@ Results for English only.
 Results for English only sorted by no punctuation.
 
 ![results](layout_evaluation/results_en_nopunctuation.png "Grades per layout")
+
+Average of English results.
+
+![results](layout_evaluation/results_en_avg.png "Grades per layout")
 
 Average of all results.
 
