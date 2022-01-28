@@ -1,0 +1,446 @@
+/*
+This file can be commented by blocks or single lines using //
+Blank lines are ignored
+*/
+/*
+Bigram frequencies in stats.csv
+*/
+
+[keys]
+L21 L22 L23 L24 L25 L26 R26 R25 R24 R23 R22 R21
+L31 L32 L33 L34 L35 L36 R36 R35 R34 R33 R32 R31
+L41 L42 L43 L44 L45 L46 R46 R45 R44 R43 R42 R41
+
+[weights]
+3.0 2.5 2.1 2.3 2.6 3.4 2.2 2.0 2.4 3.0 3.6 4.7
+3.4 1.6 1.3 1.1 1.0 2.9 2.9 1.0 1.1 1.3 1.6 3.4 
+4.6 3.3 2.7 2.4 1.8 2.2 2.2 1.8 2.4 2.7 3.3 4.6
+
+/*
+Weights should:
+- limit weak fingers
+- limit bottom row
+- increase home row
+- limit finger travel distance
+
+https://colemakmods.github.io/mod-dh/compare.html
+*/
+
+[penalties]
+  ,same_row,row_jump1,row_jump2
+ii,      2.5,     3.0,      4.0  // same finger
+im,      0.5,     1.0,      1.5
+ir,      0.5,     1.0,      1.5
+ip,      0.5,     1.0,      1.5
+mi,     -1.5,    -0.5,      1.5  // inward roll
+mm,      2.5,     3.0,      4.0  // same finger
+mr,      0.5,     1.0,      1.5
+mp,      0.5,     1.0,      1.5
+ri,     -1.5,    -0.5,      1.5  // inward roll
+rm,     -2.0,    -0.5,      1.2  // inward roll
+rr,      2.5,     3.0,      4.0  // same finger
+rp,      0.5,     1.0,      1.5
+pi,     -1.0,     0.0,      1.0  // inward roll
+pm,     -1.0,     0.0,      1.5  // inward roll
+pr,     -1.0,     0.0,      1.5  // inward roll
+pp,      2.5,     3.0,      4.0  // same finger
+
+/*
+Only apply if not the same letter, and both letters on the same hand.
+
+i, m, r, and p refer to the fingers (index, middle, ring, pinky)
+The columns refer to how many rows separate the two keys
+
+Penalties should:
+- limit same finger typing (except same key twice)
+- balance hands
+- favor inward rolling
+(last 2 in opposition with each other)
+*/
+
+[layouts]
+
+//https://web.archive.org/web/20201108110332/http://mkweb.bcgsc.ca/carpalx/?worst_layout
+>>TNWMLC
+# t n w m l c b p r h #
+# s g x j f k q z v ; '
+# e a d i o y u , . / -
+
+>>ABCDE
+# a b c d e f g h i j #
+# k l m n o p q r s ; '
+# t u v w x y z , . / -
+
+>>Qwerty
+# q w e r t y i o u p #
+# a s d f g h j k l ; '
+# z x c v b n m , . / -
+
+>>Qwerty Angle Mod
+# q w e r t y i o u p #
+# a s d f g h j k l ; '
+z x c v b \ n m , . / -
+
+>>Azerty
+# a z e r t y u i o p ^
+' q s d f g h j k l m ù
+# w x c v b n , . : ! -
+
+>>Qwertz
+# q w e r t z u i o p ü
+# a s d f g h j k l ö ä
+# y x c v b n m , . - '
+
+>>Bepo 40%
+# b # p o # ^ v d l j z
+- a u i e , c t s r n m
+ç à y x . k ' q g h f w
+
+// https://github.com/TeXitoi/keyberon#whats-the-layout
+>>Bepo keyberon
+# b # p o # ^ v d l j z
+w a u i e , c t s r n m
+- à y x . k ' q g h f ç
+
+>>Dvorak
+- ' , . p y f g c r l #
+# a o e u i d h t n s #
+# ; q j k x b m w v z #
+
+>>Colemak
+# q w f p g j l u y ; #
+# a r s t d h n e i o '
+# z x c v b k m , . / -
+
+>>Colemak Angle Mod ANSI
+# q w f p g j l u y ; #
+# a r s t d h n e i o '
+# x c v b z k m , . / -
+
+>>Colemak Angle Mod ISO
+# q w f p g j l u y ; #
+# a r s t d h n e i o '
+z x c v b \ k m , . / -
+
+>>Colemak DHk
+# q w f p b j l u y ; #
+# a r s t g k n e i o '
+# z x c d v m h , . / -
+
+>>Colemak DHm
+# q w f p b j l u y ; #
+# a r s t g m n e i o '
+# z x c d v k h , . / -
+
+>>Workman
+# q d r w b j f u p ; #
+# a s h t g y n e o i '
+# z x m c v k l , . / -
+
+>>Norman
+# q w d f k j u r l ; #
+# a s e t g y n i o h '
+# z x c v b p m , . / -
+
+>>Neo
+- x v l c w k h g f q ß
+# u i a e o s n r t d y
+# ü ö ä p z b m , . j '
+
+// http://mkweb.bcgsc.ca/carpalx/?full_optimization
+>>qgmlwyfub
+# q g m l w y f u b ; #
+# d s t n r i a e o h '
+# z x c v j k p , . / -
+
+// http://mkweb.bcgsc.ca/carpalx/?full_optimization
+>>qgmlwbyuv
+# q g m l w b y u v ; #
+# d s t n r i a e o h '
+# z x c f j k p , . / -
+
+// http://mkweb.bcgsc.ca/carpalx/?full_optimization
+>>qgmlwbyuob
+# q f m l w y u o b j #
+# d s t n r i a e h ; '
+# z v g c x p k , . / -
+
+// https://keyboard-design.com/letterlayout.html?layout=qwkrfy.en.ansi
+>>Qwkrfy
+# q w k r f y u i j p #
+# d s a t n h o e l ; '
+# z x c v b g m , . / -
+
+// https://mathematicalmulticore.wordpress.com/the-keyboard-layout-project/
+>>MTGAP
+# y p o u j k d l c w #
+# i n e a , m h t s r '
+# q z / . : b f g v x -
+
+// https://www.youtube.com/watch?v=jXkeUr1DF-k
+>>MTGAP Mod1
+# y p o u z k d l c w x
+# i n e a , m h t s r -
+# " / ' . q b f g v j #
+
+// https://www.youtube.com/watch?v=-UkoTEGiBpQ
+>>MTGAP Mod2
+# y p o u j k d l c w #
+# i n e a , m h t s r #
+# q z ' . ; b f g v x -
+
+// http://mtgap.bilfo.com/official_keyboard.html
+// http://mtgap.bilfo.com/completed_keyboard.html
+>>MTGAP 2.0
+# , f h d k j c u l . #
+# o a n t g m s e r i -
+# q x b p z y w ' v ; #
+
+>>MTGAP "Easy"
+# q w l d b j f u k p #
+# a s r t g h n e o i -
+# z x c v ; y m , . / '
+
+>>MTGAP "shortcuts"
+# k g l d b j h u f . #
+# r o t s w m n e a i -
+# z x v c q y p , ' ; #
+
+>>MTGAP "standard"
+# k l h c b j d u f . #
+# o r n s g w t e a i -
+# x q v m z y p , ' ; #
+
+>>MTGAP "ergonomic"
+# . f u d j q h c w k #
+# i a e t p l n s r o -
+# ' , y g z - m b v x #
+
+// https://geekhack.org/index.php?topic=67604.0
+>>Oneproduct
+# p l d w g j x o y q #
+- n r s t m u a e i h '
+# z c f v b , . ? ; k #
+
+// https://bepo.fr/wiki/Utilisateur:Bibidibop
+>>Coeur
+# # w o p y b ' d l j z
+x a u e i , c t s r n h
+# - à # . k g m f q v #
+
+// https://geekhack.org/index.php?topic=98275.0
+>>Kaehi
+# q w l d g j u o p / #
+# n r s t m k a e h i '
+# z x c v b y f , . ; -
+
+// https://deskthority.net/wiki/BEAKL
+>>BEAKL 15
+# q h o u x g c r f z #
+- y i e a . d s t n b ;
+# j / , k ' w m l p v #
+
+// https://web.archive.org/web/20190906220509/http://shenafu.com/smf/index.php?topic=89.msg2566#msg2566
+>>BEAKL 19
+# q . o u j w d n m , #
+- h a e i k g s r t p ;
+# z ' / y x b c l f v #
+
+// https://www.reddit.com/r/ErgoDoxEZ/comments/gsvpug/layout_of_the_month_beakl_15/ftcan68/?context=3
+>>BEAKL 19bis
+# q y o u z w d n c k #
+- h i e a , g t r s p ;
+# j ' # . x v m l f b #
+
+// https://www.reddit.com/r/ErgoMechKeyboards/comments/j1eopm/hands_down_layout_is_ready_for_daily_use/g7bjmr7/?context=3
+>>BEAKL 19 Opt French
+# w m r d v y u o q x #
+# g s n t p , i e a h -
+# k f l c b j # ' . z #
+
+// http://millikeys.sourceforge.net/asset/
+>>ASSET
+# q w j f g y p u l ; #
+# a s e t d h n i o r '
+# z x c v b k m , . / -
+
+// https://sourceforge.net/projects/qwpr/
+>>Qwpr
+# q w p r f y u k l ; #
+# a s d t g h n i o e '
+# z x c v b j m , . / -
+
+// http://www.minimak.org/
+>>Minimak-8key
+# q w d r k y u i l p #
+# a s t f g h n e o ; '
+# z x c v b j m , . / -
+
+// https://github.com/mw8/white_keyboard_layout
+// adapted to ergo keyboard
+>>White
+# v y d , ' j m l u ( )
+# a t h e b c s n o i -
+# p k g w q x r f . z #
+
+// https://github.com/jackrosenthal/threelayout
+>>Three
+# q f u y z x k c w b #
+# o h e a i d r t n s -
+# , m . j ; g l p v ' #
+
+//https://sites.google.com/alanreiser.com/handsdown
+>>Hands down
+# q c h g j y f o b ' #
+# s n r t p w u e i a #
+# x m l d z v k . , ; -
+
+//https://sites.google.com/alanreiser.com/handsdown
+>>Notarize
+# q w d f p y u k l ' #
+# a s t e g h n i o r #
+# z x c v b j m . , ; -
+
+// http://kennetchaz.github.io/symmetric-typing/soul.html
+>>Soul mod
+# q w l d p k m u y ; '
+# a s r t g f n e i o #
+# j z x c v b h , . / -
+
+// http://kennetchaz.github.io/symmetric-typing/niro.html
+>>Niro mod
+# q w u d p j f y l ; #
+# a s e t g h n i r o '
+# b z x c v k m , . / -
+
+// https://docs.google.com/document/d/1yiCnIi1oagV1D8ZouMt-TRFRG8d6AfSBIwQkBvSflvY/edit
+>>The-1
+# k m l u ? v d r ' q #
+# a t h e . c s n o i -
+# z p f j , b g w x y /
+
+// https://engram.dev
+>>Engram 2.0/Engram Mod
+# b y o u ' " l d w v z
+# c i e a , . h t s n q
+# g x j k - ? r m f p #
+
+// https://github.com/MadRabbit/halmak
+>>Halmak
+# w l r b z ; q u d j #
+# s h n t , . a e o i '
+# f m v c / g p x k y -
+
+// https://keyboard-design.com/letterlayout.html?layout=optimal-digram.en.ansi
+>>Optimal digram
+# q y u . , f m l d p z
+# s i e a o h n r t c g
+# j ) ' ? ( x v w k b -
+
+// https://keyboard-design.com/letterlayout.html?layout=uciea-keyboard.en.ansi
+>>Uciea
+# p y u o - k d h f x q
+# c i e a ' g t n s r v
+# z " , . ; w m l b j - 
+
+// https://keyboard-design.com/letterlayout.html?layout=x1.en.ergodox
+// . and , moved
+>>x1
+# k y o ' ! f c l p q z
+# h i e a u d s t n r v
+# j ? . , # w g m b x -
+
+//https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
+>>Klausler
+# k , u y p w l m f c /
+# o a e i d r n t h s -
+# q . ' ; z x v g b j #
+
+//https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
+>>Hieamtsrn
+# b y o u ' k d c l p q
+# h i e a , m t s r n v 
+# x - ' . ? w g f j z #
+
+//https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
+>>Capewell-Dvorak
+# ' , . p y q f g r k /
+# o a e i u d h t n s -
+# z x c v j l m w b ; #
+
+//https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
+>>Capewell
+# . m y d g : w h , ' ?
+# a r e s f k t n i o - 
+# x c z v j b p l u q #
+
+>>Capewell Mod
+# . m y d g : w h , ' ?
+# a r e s f k t n i o - 
+# z x c v j b p l u q #
+
+//https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
+>>abKey
+# f g h j k l m n - # #
+# a e i o u p q r s t ; '
+# b c d v w x y z , . #
+
+//https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
+>>c-qwerty n
+# q w d r f j y p l ; [
+# a s e t g h u n i o '
+# z x c v b k m , . / -
+
+//https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
+>>c-qwerty
+# q w d r f j y p l k [
+# a s e t g h u i o , ' 
+# z x c v b n m ; . / -
+
+//https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
+>>c-qwerty 0.5
+# q w d r t j y k l p [
+# a s e f g h u i o ; ' 
+# z x c v b n m , . / -
+
+//https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
+>>Arensito
+# q l , p ' ; f u d k [
+# a r e n b g s i t o ' 
+# z w . h j v c y m x -
+
+//https://keyboard-design.com/best-ansi-layouts-all.html
+>>g-ansi-maks
+# z y u , - w c r p k q
+# g i e a o d s n t h v
+# = j ' . ; m f l b x #
+
+//https://keyboard-design.com/best-ansi-layouts-all.html
+>>uciea-pcrw
+# p y u o - k m h b x q
+# c i e a , d t n s r w
+# z j ' . ; f g l v / #
+
+//https://keyboard-design.com/best-ansi-layouts-all.html
+>>uciea-gcsv
+# g y u o - k m h p x q
+# c i e a , d t r n s v
+# z j ' . ; f w l b / #
+
+//https://keyboard-design.com/best-ansi-layouts-all.html
+>>full-maks-minimo
+# q y u o ' # c l p v x
+- i h e a , d s t n r w z
+# j k # . ; f g m b # #
+
+//https://notgate.github.io/layout/
+>>ISRT
+# y c l m k z f u , ' #
+# i s r t g p n e a o ;
+# q v w d j b h / . x -
+
+//https://notgate.github.io/layout/
+>>ISRT angle mod
+# y c l m k z f u , ' #
+# i s r t g p n e a o ;
+# v w d j q b h / . x -
