@@ -432,3 +432,15 @@ x a u e i , c t s r n h
 # q y u o ' # c l p v x
 - i h e a , d s t n r w z
 # j k # . ; f g m b # #
+
+//https://notgate.github.io/layout/
+>>ISRT
+# y c l m k z f u , ' #
+# i s r t g p n e a o ;
+# q v w d j b h / . x -
+
+//https://notgate.github.io/layout/
+>>ISRT angle mod
+# y c l m k z f u , ' #
+# i s r t g p n e a o ;
+# v w d j q b h / . x -
