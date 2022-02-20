@@ -12,9 +12,9 @@ L31 L32 L33 L34 L35 L36 R36 R35 R34 R33 R32 R31
 L41 L42 L43 L44 L45 L46 R46 R45 R44 R43 R42 R41
 
 [weights]
-3.0 2.5 2.1 2.3 2.6 3.4 2.2 2.0 2.4 3.0 3.6 4.7
-3.4 1.6 1.3 1.1 1.0 2.9 2.9 1.0 1.1 1.3 1.6 3.4 
-4.6 3.3 2.7 2.4 1.8 2.2 2.2 1.8 2.4 2.7 3.3 4.6
+5.0 3.6 2.4 1.8 2.2 3.5 3.5 2.2 1.8 2.4 3.6 5.0
+4.0 1.6 1.2 1.0 1.0 3.0 3.0 1.0 1.0 1.2 1.6 4.0
+5.0 3.4 2.6 2.2 1.8 4.0 4.0 1.8 2.2 2.6 3.4 5.0
 
 /*
 Weights should:
@@ -28,22 +28,22 @@ https://colemakmods.github.io/mod-dh/compare.html
 
 [penalties]
   ,same_row,row_jump1,row_jump2
-ii,      2.5,     3.0,      4.0  // same finger
-im,      0.5,     1.0,      1.5
-ir,      0.5,     1.0,      1.5
-ip,      0.5,     1.0,      1.5
+ii,      2.5,     3.5,      4.5  // same finger
+im,      0.5,     1.0,      2.0
+ir,      0.5,     0.8,      1.5
+ip,      0.5,     0.8,      1.1
 mi,     -1.5,    -0.5,      1.5  // inward roll
-mm,      2.5,     3.0,      4.0  // same finger
-mr,      0.5,     1.0,      1.5
-mp,      0.5,     1.0,      1.5
+mm,      2.5,     3.5,      4.5  // same finger
+mr,      0.5,     1.0,      2.0
+mp,      0.5,     0.8,      1.5
 ri,     -1.5,    -0.5,      1.5  // inward roll
 rm,     -2.0,    -0.5,      1.2  // inward roll
-rr,      2.5,     3.0,      4.0  // same finger
-rp,      0.5,     1.0,      1.5
+rr,      2.5,     3.5,      4.5  // same finger
+rp,      1.0,     1.5,      2.5
 pi,     -1.0,     0.0,      1.0  // inward roll
 pm,     -1.0,     0.0,      1.5  // inward roll
 pr,     -1.0,     0.0,      1.5  // inward roll
-pp,      2.5,     3.0,      4.0  // same finger
+pp,      3.0,     4.0,      5.5  // same finger
 
 /*
 Only apply if not the same letter, and both letters on the same hand.
@@ -64,27 +64,27 @@ Penalties should:
 >>TNWMLC
 # t n w m l c b p r h #
 # s g x j f k q z v ; '
-# e a d i o y u , . / -
+# e a d i o y u , . / #
 
 >>ABCDE
 # a b c d e f g h i j #
 # k l m n o p q r s ; '
-# t u v w x y z , . / -
+# t u v w x y z , . / #
 
 >>Qwerty
 # q w e r t y i o u p #
 # a s d f g h j k l ; '
-# z x c v b n m , . / -
+# z x c v b n m , . / #
 
 >>Qwerty Angle Mod
 # q w e r t y i o u p #
 # a s d f g h j k l ; '
-z x c v b \ n m , . / -
+z x c v b \ n m , . / #
 
 >>Azerty
 # a z e r t y u i o p ^
 ' q s d f g h j k l m ù
-# w x c v b n , . : ! -
+# w x c v b n , . : ! #
 
 >>Qwertz
 # q w e r t z u i o p ü
@@ -110,37 +110,37 @@ w a u i e , c t s r n m
 >>Colemak
 # q w f p g j l u y ; #
 # a r s t d h n e i o '
-# z x c v b k m , . / -
+# z x c v b k m , . / #
 
 >>Colemak Angle Mod ANSI
 # q w f p g j l u y ; #
 # a r s t d h n e i o '
-# x c v b z k m , . / -
+# x c v b z k m , . / #
 
 >>Colemak Angle Mod ISO
 # q w f p g j l u y ; #
 # a r s t d h n e i o '
-z x c v b \ k m , . / -
+z x c v b \ k m , . / #
 
 >>Colemak DHk
 # q w f p b j l u y ; #
 # a r s t g k n e i o '
-# z x c d v m h , . / -
+# z x c d v m h , . / #
 
 >>Colemak DHm
 # q w f p b j l u y ; #
 # a r s t g m n e i o '
-# z x c d v k h , . / -
+# z x c d v k h , . / #
 
 >>Workman
 # q d r w b j f u p ; #
 # a s h t g y n e o i '
-# z x m c v k l , . / -
+# z x m c v k l , . / #
 
 >>Norman
 # q w d f k j u r l ; #
 # a s e t g y n i o h '
-# z x c v b p m , . / -
+# z x c v b p m , . / #
 
 >>Neo
 - x v l c w k h g f q ß
@@ -151,31 +151,31 @@ z x c v b \ k m , . / -
 >>qgmlwyfub
 # q g m l w y f u b ; #
 # d s t n r i a e o h '
-# z x c v j k p , . / -
+# z x c v j k p , . / #
 
 // http://mkweb.bcgsc.ca/carpalx/?full_optimization
 >>qgmlwbyuv
 # q g m l w b y u v ; #
 # d s t n r i a e o h '
-# z x c f j k p , . / -
+# z x c f j k p , . / #
 
 // http://mkweb.bcgsc.ca/carpalx/?full_optimization
 >>qgmlwbyuob
 # q f m l w y u o b j #
 # d s t n r i a e h ; '
-# z v g c x p k , . / -
+# z v g c x p k , . / #
 
 // https://keyboard-design.com/letterlayout.html?layout=qwkrfy.en.ansi
 >>Qwkrfy
 # q w k r f y u i j p #
 # d s a t n h o e l ; '
-# z x c v b g m , . / -
+# z x c v b g m , . / #
 
 // https://mathematicalmulticore.wordpress.com/the-keyboard-layout-project/
 >>MTGAP
 # y p o u j k d l c w #
 # i n e a , m h t s r '
-# q z / . : b f g v x -
+# q z / . : b f g v x #
 
 // https://www.youtube.com/watch?v=jXkeUr1DF-k
 >>MTGAP Mod1
@@ -187,7 +187,7 @@ z x c v b \ k m , . / -
 >>MTGAP Mod2
 # y p o u j k d l c w #
 # i n e a , m h t s r #
-# q z ' . ; b f g v x -
+# q z ' . ; b f g v x #
 
 // http://mtgap.bilfo.com/official_keyboard.html
 // http://mtgap.bilfo.com/completed_keyboard.html
@@ -232,7 +232,7 @@ x a u e i , c t s r n h
 >>Kaehi
 # q w l d g j u o p / #
 # n r s t m k a e h i '
-# z x c v b y f , . ; -
+# z x c v b y f , . ; #
 
 // https://deskthority.net/wiki/BEAKL
 >>BEAKL 15
@@ -262,19 +262,19 @@ x a u e i , c t s r n h
 >>ASSET
 # q w j f g y p u l ; #
 # a s e t d h n i o r '
-# z x c v b k m , . / -
+# z x c v b k m , . / #
 
 // https://sourceforge.net/projects/qwpr/
 >>Qwpr
 # q w p r f y u k l ; #
 # a s d t g h n i o e '
-# z x c v b j m , . / -
+# z x c v b j m , . / #
 
 // http://www.minimak.org/
 >>Minimak-8key
 # q w d r k y u i l p #
 # a s t f g h n e o ; '
-# z x c v b j m , . / -
+# z x c v b j m , . / #
 
 // https://github.com/mw8/white_keyboard_layout
 // adapted to ergo keyboard
@@ -293,25 +293,25 @@ x a u e i , c t s r n h
 >>Hands down
 # q c h g j y f o b ' #
 # s n r t p w u e i a #
-# x m l d z v k . , ; -
+# x m l d z v k . , ; #
 
 //https://sites.google.com/alanreiser.com/handsdown
 >>Notarize
 # q w d f p y u k l ' #
 # a s t e g h n i o r #
-# z x c v b j m . , ; -
+# z x c v b j m . , ; #
 
 // http://kennetchaz.github.io/symmetric-typing/soul.html
 >>Soul mod
 # q w l d p k m u y ; '
 # a s r t g f n e i o #
-# j z x c v b h , . / -
+# j z x c v b h , . / #
 
 // http://kennetchaz.github.io/symmetric-typing/niro.html
 >>Niro mod
 # q w u d p j f y l ; #
 # a s e t g h n i r o '
-# b z x c v k m , . / -
+# b z x c v k m , . / #
 
 // https://docs.google.com/document/d/1yiCnIi1oagV1D8ZouMt-TRFRG8d6AfSBIwQkBvSflvY/edit
 >>The-1
@@ -329,26 +329,26 @@ x a u e i , c t s r n h
 >>Halmak
 # w l r b z ; q u d j #
 # s h n t , . a e o i '
-# f m v c / g p x k y -
+# f m v c / g p x k y #
 
 // https://keyboard-design.com/letterlayout.html?layout=optimal-digram.en.ansi
 >>Optimal digram
 # q y u . , f m l d p z
 # s i e a o h n r t c g
-# j ) ' ? ( x v w k b -
+# j ) ' ? ( x v w k b #
 
 // https://keyboard-design.com/letterlayout.html?layout=uciea-keyboard.en.ansi
 >>Uciea
 # p y u o - k d h f x q
 # c i e a ' g t n s r v
-# z " , . ; w m l b j - 
+# z " , . ; w m l b j #
 
 // https://keyboard-design.com/letterlayout.html?layout=x1.en.ergodox
 // . and , moved
 >>x1
 # k y o ' ! f c l p q z
 # h i e a u d s t n r v
-# j ? . , # w g m b x -
+# j ? . , # w g m b x #
 
 //https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
 >>Klausler
@@ -389,25 +389,25 @@ x a u e i , c t s r n h
 >>c-qwerty n
 # q w d r f j y p l ; [
 # a s e t g h u n i o '
-# z x c v b k m , . / -
+# z x c v b k m , . / #
 
 //https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
 >>c-qwerty
 # q w d r f j y p l k [
 # a s e t g h u i o , ' 
-# z x c v b n m ; . / -
+# z x c v b n m ; . / #
 
 //https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
 >>c-qwerty 0.5
 # q w d r t j y k l p [
 # a s e f g h u i o ; ' 
-# z x c v b n m , . / -
+# z x c v b n m , . / #
 
 //https://web.archive.org/web/20210325104140/http://mkweb.bcgsc.ca/carpalx/?keyboard_layouts
 >>Arensito
 # q l , p ' ; f u d k [
 # a r e n b g s i t o ' 
-# z w . h j v c y m x -
+# z w . h j v c y m x #
 
 //https://keyboard-design.com/best-ansi-layouts-all.html
 >>g-ansi-maks
@@ -437,10 +437,125 @@ x a u e i , c t s r n h
 >>ISRT
 # y c l m k z f u , ' #
 # i s r t g p n e a o ;
-# q v w d j b h / . x -
+# q v w d j b h / . x #
 
 //https://notgate.github.io/layout/
 >>ISRT angle mod
 # y c l m k z f u , ' #
 # i s r t g p n e a o ;
-# v w d j q b h / . x -
+# v w d j q b h / . x #
+
+>>onehand 2
+# x / m r i a w y b v #
+# z ' s n e o t c , k #
+# q j l h u . d f p g #
+
+>>Rolll
+# y a u w b x k c l v #
+# i o e n p d h s r t #
+# j / , . q f m g ' z #
+
+>>RTNA
+# x d h . q b f o u j #
+# r t n a ; g w e i s '
+# l k m , / p c z y v #
+
+>>Semimak
+# f l h v z q w u o y # 
+# s r n t k c d e a i ;
+# x ' b m j p g , . / # 
+
+>>Semimak JQ
+# f l h v z ' w u o y #
+# s r n t k c d e a i ;
+# x j b m q p g , . / #
+
+>>SIND
+# y , h w f q k o u x #
+# s i n d c v t a e r '
+# j . l p b g m ; / z #
+
+>>Vitrimak
+# t k v u m i a j b r #
+# w x / f p d g q , s #
+# h . ' c o l n z y e #
+
+>>Vitrimak Ortho
+# e . v i a c o q y t #
+# s j / d g m p x , w #
+# r k ' l n f u z b h #
+
+>>Whorf
+# f l h d m v w o u , #
+# s r n t k g y a e i /
+# x j b z q p c ' ; . #
+
+>>404
+# y n h , / g p d s ' #
+# o a e i v b c t r l #
+# q x k u . w f m z j #
+
+>>APT
+# q c d l x z y o u / #
+# r s t h k p n e i a #
+# w g b m v j f ' , . #
+
+>>boo
+# , . u c v j f d l y #
+# a o e s g p n t r i #
+# ; x ' w z b h m k q #
+
+>>Colemak DHv
+# q w c p b j l u y ; -
+# a r s t g m n e i o '
+# x v f d z k h / . , #
+
+>>Colemak Qi
+# q l w m k j f u y ' #
+# a r s t g p n e i o ; 
+# z x c d v b h , . / # 
+
+>>Colemak Qi;x
+# ; l c m k j f u y q #
+# a r s t g p n e i o '
+# z x w d v b h / . , #
+
+>>ColemaQ
+# ; w f p b j l u y q #
+# a r s t g m n e i o '
+# z x c d k v h / . , #
+
+>>ColemaQ-F
+# ; w g p b j l u y q #
+# a r s t f m n e i o '
+# z x c d k v h / . , # 
+
+>>Engram 
+# b y o u ' " l d w v z #
+# c i e a , . h t s n q
+# g x j k - ? r m f p # 
+
+>>FLAW
+# f l a w p z k u r / #
+# h s o y c m t e n i #
+# b j ' g v q d . x , #
+
+>>Foalmak
+# b x , w v z / u t k #
+# f o a l s n e i g h #
+# p ' . m c q j y d r #
+
+>>Hands Down
+# q c h p v k y o j / #
+# r s n t g w u e i a #
+# x m l d b z f ' , . #
+
+>>hyperroll
+# p c l m v x u o y f #
+# n s r t d . a e i h #
+# b g ' w z / , q j k #
+
+>>onehand
+# x l h s a i , c p t #
+# r j z m . e f b k d #
+# q ' / n o u v g w y #

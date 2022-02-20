@@ -13,7 +13,7 @@ def main():
     df_layouts, df_keys, df_bigrams, df_penalties = parse_config(load_config())
 
     # as some letters are not present in all layouts, they can be manually removed from the bigrams list
-    letters_to_ignore = 'êàçâîôñäöüß/åéè'
+    letters_to_ignore = 'êàçâîôñäöüß/åéè-'
     # iterate over the dataframe to remove the letters
     for row in df_bigrams.itertuples():
         drop = False

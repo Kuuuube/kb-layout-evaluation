@@ -444,3 +444,118 @@ x a u e i , c t s r n h
 # y c l m k z f u , ' #
 # i s r t g p n e a o ;
 # v w d j q b h / . x #
+
+>>onehand 2
+# x / m r i a w y b v #
+# z ' s n e o t c , k #
+# q j l h u . d f p g #
+
+>>Rolll
+# y a u w b x k c l v #
+# i o e n p d h s r t #
+# j / , . q f m g ' z #
+
+>>RTNA
+# x d h . q b f o u j #
+# r t n a ; g w e i s '
+# l k m , / p c z y v #
+
+>>Semimak
+# f l h v z q w u o y # 
+# s r n t k c d e a i ;
+# x ' b m j p g , . / # 
+
+>>Semimak JQ
+# f l h v z ' w u o y #
+# s r n t k c d e a i ;
+# x j b m q p g , . / #
+
+>>SIND
+# y , h w f q k o u x #
+# s i n d c v t a e r '
+# j . l p b g m ; / z #
+
+>>Vitrimak
+# t k v u m i a j b r #
+# w x / f p d g q , s #
+# h . ' c o l n z y e #
+
+>>Vitrimak Ortho
+# e . v i a c o q y t #
+# s j / d g m p x , w #
+# r k ' l n f u z b h #
+
+>>Whorf
+# f l h d m v w o u , #
+# s r n t k g y a e i /
+# x j b z q p c ' ; . #
+
+>>404
+# y n h , / g p d s ' #
+# o a e i v b c t r l #
+# q x k u . w f m z j #
+
+>>APT
+# q c d l x z y o u / #
+# r s t h k p n e i a #
+# w g b m v j f ' , . #
+
+>>boo
+# , . u c v j f d l y #
+# a o e s g p n t r i #
+# ; x ' w z b h m k q #
+
+>>Colemak DHv
+# q w c p b j l u y ; -
+# a r s t g m n e i o '
+# x v f d z k h / . , #
+
+>>Colemak Qi
+# q l w m k j f u y ' #
+# a r s t g p n e i o ; 
+# z x c d v b h , . / # 
+
+>>Colemak Qi;x
+# ; l c m k j f u y q #
+# a r s t g p n e i o '
+# z x w d v b h / . , #
+
+>>ColemaQ
+# ; w f p b j l u y q #
+# a r s t g m n e i o '
+# z x c d k v h / . , #
+
+>>ColemaQ-F
+# ; w g p b j l u y q #
+# a r s t f m n e i o '
+# z x c d k v h / . , # 
+
+>>Engram 
+# b y o u ' " l d w v z #
+# c i e a , . h t s n q
+# g x j k - ? r m f p # 
+
+>>FLAW
+# f l a w p z k u r / #
+# h s o y c m t e n i #
+# b j ' g v q d . x , #
+
+>>Foalmak
+# b x , w v z / u t k #
+# f o a l s n e i g h #
+# p ' . m c q j y d r #
+
+>>Hands Down
+# q c h p v k y o j / #
+# r s n t g w u e i a #
+# x m l d b z f ' , . #
+
+>>hyperroll
+# p c l m v x u o y f #
+# n s r t d . a e i h #
+# b g ' w z / , q j k #
+
+>>onehand
+# x l h s a i , c p t #
+# r j z m . e f b k d #
+# q ' / n o u v g w y #
