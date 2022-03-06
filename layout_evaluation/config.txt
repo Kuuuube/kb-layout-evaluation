@@ -500,6 +500,32 @@ x a u e i , c t s r n h
 # r s t h k p n e i a #
 # w g b m v j f ' , . #
 
+>>APTv3
+# w g d f b q l u o y #
+# r s t h k j n e a i ;
+# x c m p v z , . ' / #
+
+>>APTv3 Angle Mod
+# w g d f b q l u o y #
+# r s t h k j n e a i ;
+# c m p v x z , . ' / #
+
+//https://github.com/ClemenPine/200-analyzer/tree/master/layouts
+>>APTx
+# q c d w x z p o u ; #
+# r s t n v y h e i a #
+# l g b m j k f ' , . #
+
+>>APTAP Initial
+# w c d l ' / y o u q #
+# r s t h m p n e i a #
+# v b g k , . f j x z #
+
+>>APTAP Final
+# w c d l k j y o u / #
+# r s t h v p n e i a #
+# q b g m x z f ' , . #
+
 >>boo
 # , . u c v j f d l y #
 # a o e s g p n t r i #
@@ -515,7 +541,7 @@ x a u e i , c t s r n h
 # a r s t g p n e i o ; 
 # z x c d v b h , . / # 
 
->>Colemak Qi;x
+>>Colemak Qi x
 # ; l c m k j f u y q #
 # a r s t g p n e i o '
 # z x w d v b h / . , #
@@ -559,3 +585,96 @@ x a u e i , c t s r n h
 # x l h s a i , c p t #
 # r j z m . e f b k d #
 # q ' / n o u v g w y #
+
+>>CTGAP
+# v p l c f k u o y j #
+# r n t s d ' a e i h #
+# z b m g w x , . ; q #
+
+>>CTGAP 2.0
+# w c l d k j y o u / #
+# r s t h m p n e i a #
+# q v g f b z x ' , . #
+
+>>qwerf
+# q w e r f j y l k ; #
+# a s d t g h u i o p '
+# z x c v b n m , . / #
+
+//https://github.com/ClemenPine/200-analyzer/tree/master/layouts
+>>Heart
+# q g d v x j y o u ; '
+# r s t h l p n a i e #
+# w c b m k z f , . / #
+
+//https://github.com/ClemenPine/200-analyzer/tree/master/layouts
+>>Dvormax
+# k y u . ? z l m d p v
+# r i e a o h n s t c w
+# x ) ' , ( j q f g b #
+
+//https://github.com/ClemenPine/200-analyzer/tree/master/layouts
+>>Optimal-trigram
+# ( u o c y b f l m p j
+# i e a s g h n r t d w
+# , ) . ? z q x ' v k #
+
+//https://github.com/ClemenPine/200-analyzer/tree/master/layouts
+>>Pine
+# y l r d w j m o u , #
+# c s n t g p h a e i #
+# x z q v k b f ' / . #
+
+//https://github.com/ClemenPine/200-analyzer/tree/master/layouts
+>>Real
+# y l u o . z f h c w /
+# i r e a , d t n s m -
+# ; j ' q x p k b g v #
+
+//https://github.com/ClemenPine/200-analyzer/tree/master/layouts
+>>stndc
+# v m h g p x l o u y j
+# s t n d c w r a e i –
+# z k b f q , . ' " ? #
+
+//https://github.com/ClemenPine/200-analyzer/tree/master/layouts
+>>Typehack
+# j g h p f q v o u ; #
+# r s n t k y i a e l #
+# z w m d b c , ' . x #
+
+//https://github.com/ClemenPine/200-analyzer/tree/master/layouts
+>>Dwarf
+# f l h d v z g o u . #
+# s r n t m p y e i a #
+# x j b k q c w ' , ; #
+
+//https://github.com/ClemenPine/200-analyzer/tree/master/layouts
+>>Rsi-terminated
+# z c y w k x l u , q #
+# r s i t g m n e a o #
+# j f p d b v h ' . ? #
+
+//https://github.com/ClemenPine/200-analyzer/tree/master/layouts
+>>ADNW-english-bigram
+# q y u . ? z m l d b p
+# s i e a o h n r t c g
+# j ) ' , ( f x w k v #
+
+//https://github.com/ClemenPine/200-analyzer/tree/master/layouts
+>>ARTS
+# q l d y g j m o u ; #
+# a r t s c p n e i h /
+# z x k w v b f ' , . #
+
+//https://github.com/ClemenPine/200-analyzer/tree/master/layouts
+>>Balance-12
+# p l c d w ' u o y k q
+# n r s t m , a e i h v
+# z j f g b ? . ( ) x #
+
+//https://github.com/ClemenPine/200-analyzer/tree/master/layouts
+>>Colman
+# q l r w b j m u y ; #
+# a n h s f p t e i o '
+# z x v c k g d , . / #
