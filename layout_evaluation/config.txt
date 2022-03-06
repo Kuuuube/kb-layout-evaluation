@@ -678,3 +678,13 @@ x a u e i , c t s r n h
 # q l r w b j m u y ; #
 # a n h s f p t e i o '
 # z x v c k g d , . / #
+
+>>rollmak
+# q w f p b z l u o ; #
+# c r s t g m n e a i '
+# v x y d k j h / , . #
+
+>>sertain
+# x l d k v z w o u ; #
+# s r t n f g y e i a /
+# q j m h b p c ' , . #
